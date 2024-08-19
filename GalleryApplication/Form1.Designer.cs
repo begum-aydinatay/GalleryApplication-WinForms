@@ -64,38 +64,49 @@
             // 
             // menuOpen
             // 
+            menuOpen.Image = Properties.Resources.open_icon;
             menuOpen.Name = "menuOpen";
-            menuOpen.Size = new Size(133, 26);
+            menuOpen.ShortcutKeys = Keys.Control | Keys.Shift | Keys.O;
+            menuOpen.Size = new Size(238, 26);
             menuOpen.Text = "Open";
+            menuOpen.Click += menuOpen_Click;
             // 
             // menuSave
             // 
+            menuSave.Image = Properties.Resources.save_icon;
             menuSave.Name = "menuSave";
-            menuSave.Size = new Size(133, 26);
+            menuSave.ShortcutKeys = Keys.Control | Keys.S;
+            menuSave.Size = new Size(238, 26);
             menuSave.Text = "Save";
+            menuSave.Click += menuSave_Click;
             // 
             // toolStripMenuItem1
             // 
             toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(130, 6);
+            toolStripMenuItem1.Size = new Size(235, 6);
             // 
             // menuAdd
             // 
+            menuAdd.Image = Properties.Resources.add_todo_item;
             menuAdd.Name = "menuAdd";
-            menuAdd.Size = new Size(133, 26);
+            menuAdd.ShortcutKeys = Keys.Control | Keys.N;
+            menuAdd.Size = new Size(238, 26);
             menuAdd.Text = "Add";
             menuAdd.Click += menuAdd_Click;
             // 
             // toolStripMenuItem2
             // 
             toolStripMenuItem2.Name = "toolStripMenuItem2";
-            toolStripMenuItem2.Size = new Size(130, 6);
+            toolStripMenuItem2.Size = new Size(235, 6);
             // 
             // menuExit
             // 
+            menuExit.Image = Properties.Resources.exit_todo_icon;
             menuExit.Name = "menuExit";
-            menuExit.Size = new Size(133, 26);
+            menuExit.ShortcutKeys = Keys.Alt | Keys.F4;
+            menuExit.Size = new Size(238, 26);
             menuExit.Text = "Exit";
+            menuExit.Click += menuExit_Click;
             // 
             // flowLayoutPanel
             // 
